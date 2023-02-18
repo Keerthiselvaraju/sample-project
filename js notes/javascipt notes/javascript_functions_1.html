@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //--------------function--------------------------------
+        /*function myfunc() {
+            var num1 = 1;
+            var num2 = 2;
+            var res = num1 + num2;
+            document.write(res);
+        }
+        myfunc();
+        */
+
+        //--------anonymous function----------------------------
+        /* var add =  function (){
+          var num1 = 1;
+          var num2 = 2;
+          var res = num1+num2;
+          document.write(res);
+         }
+          add();*/
+
+        /*-----Generator function----using for loop--------------
+        function* genertfunc() {
+            yield "good";
+            yield 2;
+            yield 3;
+        }
+        var obj = genertfunc();
+        for (var i of obj) {
+            document.writeln(i);
+        }*/
+
+        /*-----------------Generator function---second method--------
+        let seq = {
+            from: 1,
+            to: 10,
+            [Symbol.iterator]() {
+                return {
+                    current: this.from,
+                    last: this.to,
+                    next() {
+                        if (this.current <= this.last) {
+                            return {
+                                done: false,
+                                value: this.current++
+                            };
+                        } else {
+                            return {
+                                done: true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        document.write([0, ...seq]);*/
+
+        /*-----------Generator Function-----------spread operator----------
+        function* genertf() {
+            yield 1;
+            yield 2;
+            yield 3;
+        }
+        var spread = [0, ...genertf()];
+        document.write(spread);*/
+
+
+        /*----first type------without arguments--------------arrow function------------------
+        var dd = () => {
+            document.write(10);
+        }
+        dd();*/
+
+
+        /*----second type-----with arguments--and return type-------------arrow function------------------
+        var dd = (name) => {
+            return name  + 10;
+       }
+       document.write(dd(10));*/
+
+
+        /*----third type---with arguments--without return type---------------arrow function------------------
+        var dd = (name) => name * 2;
+       document.write(dd(10));*/
+
+
+        /*---- Constructor function-------------
+        var add = new Function('a', 'b', 'return a + b')
+        document.write(add(10, 2));*/
+
+        /*----------------Nested Function--------------------
+
+         function nested(){
+          clr();
+         
+         }
+         
+         function clr(){
+            document.getElementsByTagName("input").value = "";
+            
+         }*/
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

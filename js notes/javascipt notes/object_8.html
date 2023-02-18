@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object 8</title>
+    <script>
+        /*----------------OBJECT-------ntt =>behaviour and character ------------*/
+        /*1)object literal
+         2)intence of object
+         3)object constructor
+        */
+
+        //---------------------------Object literal-------------------
+
+        /*var tree = {
+            Tree_name: "mango",
+            years: 23,
+            season: "Summer seasson",
+
+        };
+        document.write("Tree name is " + tree.Tree_name + " age is " + tree.years + "years old");*/
+
+        //------------------------Instance object-------------
+
+        /*var tree = new Object();
+        tree.treename = "Mango",
+            tree.years = 23,
+            tree.season = "season"
+
+        document.write(tree.treename + " " + tree.years + " " + tree.season);*/
+
+        //------------------------Object constructor-----------
+
+        /*function tree(name, years) {
+            this.name = name;
+            this.age = years;
+        };
+        var t = new tree("mango", 23);
+        document.write(this.name);*/
+
+        //--------------object constructor----------------------
+
+        //object.assign()
+
+        /*var emp = {
+            id: 111,
+            name: "A",
+            salary: "45000"
+        };
+
+        var empobj = {};
+
+        var assign = Object.assign(empobj, emp);
+        document.write(empobj.id);
+        document.write(assign);  //object object*/
+
+        //--------------------------------Object.freeze()------------------------
+        //--------------------------------Object.isfrozen()----------------------
+
+        /*var bird = {
+            name: "parrot",
+            color: "green",
+        };
+        Object.freeze(bird);
+        document.write(Object.isFrozen(bird));
+        bird.name = "peakcock";
+        document.write(bird.name);*/
+
+        //--------------------------------Object.Seal()-----------------------------
+        //--------------------------------Object.isSealed()-------------------------
+
+        /*var bird = {
+            name: "parrot",
+            color: "green",
+        };
+
+        Object.seal(bird);
+        document.write(Object.isSealed(bird));
+        bird.food = "carrot";
+        document.write(bird.food);*/
+
+        //Object.getOwnPropertyNames()
+        //it get properties only
+
+        /*var bird = {
+            name: "parrot",
+            color: "green",
+        };
+
+        document.write(Object.getOwnPropertyNames(bird));*/
+
+        //Object.entries()
+        //it get property and values
+
+        /*var bird = {
+            name: "parrot",
+            color: "green",
+        };
+
+        document.write(Object.entries(bird));*/
+
+        /*----------------------object.call()------------------------*/
+
+        /*var movie = {
+            moviedetails: function() {
+                document.write(this.moviename + "<br>" + this.heroname + "<br>" + this.villain + "<br>" + "<br>" + this.concept);
+            }
+        };
+
+        var movie1 = {
+            moviename: "manadu",
+            heroname: "STR",
+            villain: "sj surya",
+            concept: "Time loop"
+        };
+
+        var movie2 = {
+            moviename: "beast",
+            heroname: "VJ",
+            villain: "soffy",
+            concept: "mall hijack"
+        };
+
+        movie.moviedetails.call(movie1);*/
+
+        /*----------------apply()-------------------------*/
+
+        /* var movie = {
+             moviedetails: function(lang, rating) {
+                 document.write(this.moviename + "<br>" + this.heroname + "<br>" + this.villain + "<br>" + this.concept + "<br>" + lang + "<br>" + rating);
+             }
+         };
+
+         var movie1 = {
+             moviename: "manadu",
+             heroname: "STR",
+             villain: "sj surya",
+             concept: "Time loop"
+         };
+
+         var movie2 = {
+             moviename: "beast",
+             heroname: "VJ",
+             villain: "saffy",
+             concept: "mall hijack"
+         };
+
+         movie.moviedetails.apply(movie2, ["tamil", 1.5]);*/
+        // in apply method, when passing values to the arguments, the value should be declared in array. and when printing inside the function, we can call the arguments directly without specifying this keyword
+
+
+        /*---------------------bind()--------------------*/
+
+        /* var movie1 = {
+             moviename: "manadu",
+             heroname: "STR",
+             villain: "sj surya",
+             concept: "Time loop",
+             details: function() {
+                 document.write(this.moviename + this.heroname);
+             }
+         };
+
+         var movie2 = {
+             moviename: "beast",
+             heroname: "VJ",
+             villain: "saffy",
+             concept: "mall hijack"
+         };
+
+         var bind = movie1.details.bind(movie2);
+         bind();*/
+
+        /*-------------------------Object.defineProperty(obj,property)-------------------*/
+
+        //Object.defineProperty(obj,property,{values})
+        //add aditional properties
+
+        /*var tree = {
+            treename: "APPLE"
+        }
+        var define = Object.defineProperty(tree, 'years', {
+            value: 23
+        });
+        document.write(tree.years);*/
+
+        /*------------------------Object.create()-----------------*/
+
+        /*var studentdetails = {
+            std: "10th",
+            studname: "XYZ",
+            mark: 90,
+            subject: function() {
+                document.write(arr.subject)
+            }
+        };
+
+        var arr = Object.create(studentdetails);
+        arr.subject = "English";
+        studentdetails.subject();*/
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

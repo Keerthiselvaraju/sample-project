@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //-----------------------Date Function-------------------------
+        //getDate()
+        //getMonth()
+        //getFullYear()
+        //getDay()------------0-6 ,0=>-sunday,6=>saturday
+        //getHours()
+        //getSeconds()
+        //getMilliSeconds----0-999
+        //getMinutes
+
+        //SET METHOD()
+
+        //setDate()
+        //setMonth()
+        //setFullYear()
+        //setDay()
+        //setHours()
+        //setSeconds()
+        //setMilliSeconds
+        //setMinutes
+
+        /*
+
+        var dt = new Date("05/02/2022 11:27:07:101");
+        document.write("date"+dt.getDate()+"<br>");
+        document.write("/");
+        document.write(dt.getMonth() + 1);
+        document.write("/");
+        document.write(dt.getFullYear());
+        document.write("/");
+        document.write(dt.getDay() + 1);
+        document.write("/ Hours");
+        document.write(dt.getHours());
+        document.write(":");
+        document.write(dt.getSeconds());
+        document.write(":")
+        document.write(dt.getMilliseconds());
+        document.write(":")
+        document.write(dt.getMinutes());
+
+        document.write(" .....another method .... ")
+
+        var dat = new Date("may 02/22 11:27:07:101");
+        document.write(dat.getDate());
+        document.write("/");
+        document.write(dat.getMonth() + 1);
+        document.write("/");
+        document.write(dat.getFullYear());
+        document.write("/");
+        document.write(dat.getDay() + 1);
+        document.write("/ Hours");
+        document.write(dat.getHours());
+        document.write(":");
+        document.write(dat.getSeconds());
+        document.write(":")
+        document.write(dat.getMilliseconds());
+        document.write(":")
+        document.write(dat.getMinutes());
+
+        */
+
+        //--------------Set method-------------------
+
+        /*
+        var dt = new Date("05/02/2022 11:27:07:101");
+        document.write(dt);
+        dt.setDate(24);
+        document.write(dt.getDate() + "<br>");
+        dt.setMonth(05);
+        document.write("month :" + dt.getMonth() + "<br>");
+        dt.setFullYear(2001);
+        document.write("year :" + dt.getFullYear() + "<br>");
+        dt.setHours(12);
+        document.write("hour :" + dt.getHours() + "<br>");
+        dt.setMinutes(35);
+        document.write("minutes :" + dt.getMinutes() + "<br>");
+        dt.setSeconds(59);
+        document.write("Seconds :" + dt.getSeconds() + "<br>");
+        dt.setMilliseconds(189);
+        document.write("Milliseconds :" + dt.getMilliseconds() + "<br>");
+        document.write(dt);
+        */
+
+        //----------------------Math Function-------------------
+
+        //abs(50)
+        //pow(3,2)
+        //ceil(10)
+        //floor()
+        //round()
+        //cbrt(10)
+        //sqrt(10)
+        //asin(10)
+        //acos(2)
+        //atan()
+        //max(10,20,87)
+        //min()
+        //mod(10,2)
+        //hypot()
+        //exp(5)
+
+        /*
+        document.write("abs: " + Math.abs(-50) + "<br>");
+        document.write("pow: " + Math.pow(5, 3) + "<br>");
+        document.write("ceil: " + Math.ceil(10.333) + "<br>");
+        document.write("floor: " + Math.floor(10.333) + "<br>");
+        document.write("round: " + Math.round(10.63) + "<br>");
+        document.write("cbrt: " + Math.cbrt(9) + "<br>");
+        document.write("sqrt: " + Math.sqrt(11) + "<br>");
+        document.write("asin: " + Math.asin(50 * Math.PI / 180) + "<br>");
+        document.write("acos: " + Math.acos(10 * Math.PI / 180) + "<br>");
+        document.write("atan: " + Math.atan(1) + "<br>");
+        document.write("max: " + Math.max(10, 30, 40, 25) + "<br>");
+        document.write("min: " + Math.min(10, 30, 40, 25) + "<br>");
+        //document.write("mod: " + Math.mod(7, 2) + "<br>");
+        document.write("hypot: " + Math.hypot(5, 4) + "<br>");
+        document.write("exp: " + Math.exp(-110) + "<br>");
+        */
+
+        /*-------------------------------------- NUMBER ---------------------------------------- */
+        //isFinite()
+        //isInteger()
+        //isNaN()
+        //toExponential()
+        //toFixed()
+        //toPrecision()
+        //toParseInt()
+        //toParseFloat()
+        //valueof()
+        //MAX_VALUE
+        //MIN_VALUE
+        //PSITIVE_INFINITY
+        //NEGATIVE_INFINITY
+
+        /*document.write(Number.isFinite(0, "<br>")); //it will return given false in string*/
+        /*document.write(Number.isFinite("<br>" + "string")); //false------------it"string*/
+        /*document.write(Number.isInteger(0)); //true-------is integer*/
+        /*document.write(isNaN("string")); //true ---not a number */
+        /*document.write(Number.isNaN(45)); //false ----is a number */
+
+
+        /*var x = 45;
+        var y = x.toExponential(3);
+        document.write(y);*/ //e after zero's
+
+        /* var x = 3.55;
+         var y = x.toFixed();
+         document.write(y);       //4*/
+
+        /*var x = 30.65;
+        var y = x.toPrecision(2);
+        document.write(y);        //31*/
+
+        /*var x = 30.65;
+        var y = x.toString();
+        document.write(y);
+        document.write(typeof(y));    //string*/
+
+
+
+        /*var x = 30.65;
+        document.write(Number.parseInt(x)); //30*/
+
+        /*var x = 30.45;
+        var y = "25 years"
+        var z = "years 25"
+        document.write(parseFloat(x));
+        document.write(parseFloat(y));
+        document.write(parseFloat(z)); //nan*/
+
+        /*var x = 30.45;
+        var y = x.valueOf(y);
+        document.write(y);   //30.5
+        document.write(typeof(y)); //number-------given pure number*/
+
+
+
+        /*NUMBER PARAMETER*/
+
+
+
+        /*document.write(Number.MAX_VALUE);    //1.7976931348623157e+308*/
+        /*document.write(Number.MIN_VALUE);      //5e-324*/
+        /*document.write(Number.POSITIVE_INFINITY);
+        document.write(Number.NEGATIVE_INFINITY);*/
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

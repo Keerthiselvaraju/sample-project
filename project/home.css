@@ -1,0 +1,28 @@
+body{
+    margin: 0%;
+    background-color:rgb(149, 237, 240);
+
+}
+.top{
+    width: 100%;
+    height:150px;
+    background-color: rgb(245, 195, 241);
+    }
+    img{
+        margin-left: 300px;
+        margin-top: 15px;
+    }
+    .menubox{
+        width: 100%;
+        height:30px;
+        background-color: rgba(29, 28, 28, 0.932);
+    
+    }
+    .menu{
+        display:flex;
+        justify-content:space-evenly;
+        list-style-type: none;
+        color: white;
+         
+    }
+    

@@ -1,0 +1,51 @@
+JAVASCRIPT SYLLABUS
+------------------------
+1. VARIABLES
+2. DATATYPES
+3. TYPEOF OPERATOR
+4. OPERATORS
+5. FUNCTIONS
+6. STRING,ARRAY,OBJECT,NUMBER,MATH,BOOLEAN - METHODS
+7. EVENTS
+8. BOM
+9. DOM
+10. ASYNC,AWAIT,CALLBACK,PROMISES
+11. ERROR HANDLING
+12. JSON
+13. HOISTING
+14. STRICT MODE
+15. FORM VALIDATION
+-----------------------------------------------
+VARIABLES - local variable --- global variable
+----------------------------------------------
+var, let, const
+--------------------------------------------
+DATA TYPES
+------------------------------------------
+1. STRING
+2. NUMBER
+3. OBJECT
+4. FUNCTION
+5. BOOLEAN
+------------------------------------------
+
+var a = 10;
+var a = 5;
+-----------------
+let a = 20;
+let b = 30;
+------
+const a = 30;
+-----------------
+OPERATORS
+-----------------
+1. ARITHMETIC OPERATORS  == +,-,*,/,%,++,--
+2. ASSIGNMENT OPERATORS  == +=,-=,*=,/=,%=   X=5; Y=10
+3. LOGIC OPERATOR	== &&, || , !  == (10 >=9) || (10 == 10)
+4. COMPARISION OPERATOR  == >,<,>=,<=,==,===,!==
+5. TERNARY OPERTOR / CONDITIONAL  ==> ? :
+
+IF(AGE >=18) ? 
+DOCUMENT.WRITE(YOU ARE ELIGIBLE TO VOTE) :
+DOCUMENT.WRITE(YOU ARE NOT ELIGIBLE TO VOTE);
+--------------------------------------

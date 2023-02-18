@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+    <script>
+        /* String literals*/
+        /*
+        var str = "Good morning";
+        document.write(str);
+        */
+
+        /* Instance of string - converting string to object using new keyword*/
+        /*var str = new String("Good Morning");
+        document.write(str);*/
+
+        /* String Methods  -- Concat
+        var str1 = "How";
+        var str2 = "are";
+        var str3 = "you?";
+        document.write(str1.concat(" " + str2 + " " + str3));*/
+
+        /* charAt() -- returns character based on the given position
+        var str = "Welcome to my Garden";
+        document.write(str.charAt(11));*/
+
+        /*charCodeAt() -- returns character code based on the given position
+        var str = "Welcome to my Garden";
+        document.write(str.charCodeAt(11)); //A - 65 Z=90 a=97 z=122*/
+
+        /*IndexOf() -- returns position of the character or string
+        //syntax : indexOf(character)/(string)/(ch,index)/(str,index)
+        var str = "Welcome to my Garden";
+        document.write(str.indexOf('a'));*/
+
+        /* var str = "Welcome to my Garden";
+         document.write(str.indexOf('den'));*/
+
+        /* var str = "Wedcome to my Garden";
+         document.write(str.indexOf('d', 8));*/
+
+        /* var str = "Wedcome to my Garden";
+         document.write(str.indexOf('com', 2));*/
+        /*var str = "Wedcome to my Garden";
+        document.write(str.indexOf(str.length - 1));// returns -1*/
+
+        //lastIndexof()
+        /* var str = "Welcomy to my Gardon";
+         document.write(str.lastIndexOf('o'));*/
+
+        //substring--substr cannot extract the character from the last position
+        /* var str = "Welcome to my Garden";
+         document.write(str.substring(4,12));*/
+
+
+        //slice  --- can extract the character from the last position
+        /*var str = "Welcome to my Garden";
+        document.write(str.slice(-8));*/
+
+        // .toUpperCase -- .toLowerCase()
+        /*var str = "Welcome to my Garden";
+        document.write(str.toUpperCase());
+        document.write(str.toLowerCase());*/
+
+        //search --- search given string and returns position
+        //var str = "Welcome to my garden";
+        //document.write(str.search("Garden"));
+
+        // for case insensitive use => i flag and g flag for global search
+        //document.write(str.search(/Garden/i));
+
+        //case sensitive ---
+        //document.write(str.search(/GARDEN/));
+
+
+        //replace*****************replace old text to new text
+        // var str = "Welcome to my garden";
+        // document.write(str.replace(/My/i, 'beautiful'));
+
+        //match************** finds and returns the matching string.
+        //var str = "Welcome to my garden";
+        //document.write(str.match(/Gard/));
+        //document.write(str.match('Gard'));
+
+        //split****************splits the character based on the input
+        /*var str = "Welcome to my garden";
+        document.write(str.split(" ,"));*/
+
+        //trim*************** removes left,right and between spaces
+        /*var str = "Welcome to my garden";
+        document.write(str.trim());*/
+
+        //toString***********converts any value to string format
+        /*var str = 1;
+        var str1 = str.toString();
+        //to check the type of the above value use typeOf operator.
+        document.write(typeof(str1));*/
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

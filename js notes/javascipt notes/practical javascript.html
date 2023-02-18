@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical</title>
+</head>
+
+<body>
+    <p id="paragraph">Welcome to the world </p>
+
+    <script>
+        //---------------string regExp methods----------------
+
+        //slice()
+        /*var a = ("Hello world");
+        var b = a.slice(2, 8);
+        document.write(b);*/
+
+        //search()
+        /*var str = "Welcome to my garden";
+        document.write(str.search("garden"));*/
+
+        //replace()
+        /*var str = "Welcome to my garden";
+        document.write(str.replace(/My/i, 'beautiful'));*/
+
+        //match()
+        /*var str = "Welcome to my garden";
+        document.write(str.match('gard'));*/
+
+        //lastIndexof()
+        /* var str = "Welcomy to my Gardon";
+         document.write(str.lastIndexOf('o'));*/
+
+        //----------------------array methods------------------
+
+        //every()
+
+        /* var price = [50, 40, 35, 60, 70];
+
+         function check(value) {
+             return value >= 35;
+         }
+         document.write(price.every(check));*/
+
+        //pop()
+        /*var arr1 = ["A", "B"];
+        var temp = arr1.pop();
+        document.write(temp);*/
+
+        //push()
+        /*var arr1 = ["A", "B"];
+        arr1.push("Z");
+        document.write(arr1);*/
+
+        //join()
+        /*var arr1 = ["apple", "bananana", "orange"];
+        var temp = arr1.join('@');
+        document.write(temp);*/
+
+        //reverse()
+        /*var arr1 = [1, 4, 8, 3, 2];
+        document.write(arr1.reverse());*/
+
+        //---------------Object Methods-----------------
+
+        //Object.create()
+        /*var studentdetails = {
+            std: "12th",
+            studname: "aakash",
+            mark: 94,
+            subject: function() {
+                document.write(arr.subject)
+            }
+        };
+
+        var arr = Object.create(studentdetails);
+        arr.subject = "full stack python";
+        studentdetails.subject();*/
+
+        //call()
+        /*var students = {
+            studentdetails: function() {
+                document.write(this.department + "<br>" + this.name + "<br>" + this.course);
+            }
+        };
+
+        var student1 = {
+            department: "ece",
+            name: "xxx",
+            course: "python",
+        };
+
+        var movie2 = {
+            department: "ece",
+            name: "yyy",
+            course: "java",
+        };
+
+        students.studentdetails.call(student1);*/
+
+        //apply()
+        /*var students = {
+            studentdetails: function(ability, eca) {
+                document.write(this.department + "<br>" + this.name + "<br>" + this.course + "<br>" + this.ability + "<br>" + this.eca);
+            }
+        };
+
+        var student1 = {
+            department: "ece",
+            name: "xxx",
+            course: "python",
+        };
+
+        var movie2 = {
+            department: "ece",
+            name: "yyy",
+            course: "java",
+        };
+
+        students.studentdetails.apply(student1, ["topper", "sports"]);*/
+
+        //-------------------------------EVENTS------------
+
+        /*document.getElementById("paragraph").addEventListener("mouseover", myfun1);
+        document.getElementById("paragraph").addEventListener("mouseleave", myfun2);
+
+        function myfun1() {
+            document.getElementById("paragraph").style.backgroundColor = "red";
+        }
+
+        function myfun2() {
+            document.getElementById("paragraph").style.backgroundColor = "";
+        };*/
+
+        //--------------------------SETINTERVEL------------------
+
+        /*var counter = 1;
+        setInterval(function() {
+            document.getElementById("radio" + counter).checked = true;
+            counter = counter + 1;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 3000);*/
+    </script>
+</body>
+
+</html>

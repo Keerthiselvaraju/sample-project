@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*array literals*/
+        /*var arr = [1, 2, 3, 4, 5];
+        for (i = 0; i < arr.length; i++) {
+             document.write(arr[i]);
+        };*/
+
+        /*instance of array*/
+        /*var arr = new Array();
+        arr[0] = "A";
+        arr[1] = "B";
+        arr[2] = "c";
+        document.write(arr[0]);*/
+
+        /*Array constructor (new)*/
+        /*var obj = new Array(1, 2, 3, 4, 5);
+        for (var x of obj) {
+            document.write(x);
+        };*/
+        /*var arr1 = ["A", "B"];
+        var arr2 = ["c", "d"];
+        var arr3 = ["e", "f"];
+        document.write(arr1.concat(arr2, arr3));*/
+
+        /*shift method*/
+        /* var arr1 = ["A", "B"];
+         var arr2 = ["E", "D"];
+         var arr3 = ["E", "F"];
+
+         document.write(arr1.shift())*/
+
+        /*unshift method*/
+        /*var arr1 = ["A", "B"];
+        var arr2 = ["E", "D"];
+        var arr3 = ["E", "F"];
+
+        var temp = (arr2.unshift(arr1, arr3));
+
+        (arr1.unshift("Y"));
+        document.write(arr2);*/
+
+        //pop and push method
+        /* var arr1 = ["A", "B"];
+         var temp = arr1.pop();
+         document.write(temp);*/
+        //arr1.push("z");
+        //document.write(arr1);
+
+        /*sort*/
+        /*var arr1 = [1, 4, 8, 3, 2];
+        document.write(arr1.sort());*/
+
+        /*reverse*/
+        /*var arr1 = [1, 4, 8, 3, 2];
+        document.write(arr1.reverse());*/
+
+        /*join()*/
+        /**/
+        /*var arr1 = ["apple", "bananana", "orange"];
+        var temp = arr1.join('@');
+        document.write(temp);*/
+
+        /*every()*/
+        //syntax ; array.every(callback)
+
+        /* var price = [50, 40, 35, 60, 70];
+
+         function check(value) {
+             return value >= 35;
+         }
+         document.write(price.every(check));*/
+        //is check all value
+        //some()---->it's seems to be same as every*/
+
+        /*var price = [50, 40, 34, 60, 70];
+
+        function check(value) {
+            return value < 100;
+        }
+        document.write(price.some(check));*/
+        //is any one value on true it it will return true
+
+        /*reduce()*/
+        //syntax
+        //array.reduce(function(accumulator,currentvalue),0)
+
+        /*var arr = [6, 8, 5, 4];
+        var res = arr.reduce(function(a, b) {
+            return a + b;
+        }, 0);
+        document.write(res);*/
+        //0'th position-->add addition values in function returns
+
+        /*entries()*/
+
+        /*var price = [70, 80, 30, 40];
+
+        var obj = price.entries();
+        for (var i of obj) {
+            document.write(i + "<br>");
+        };*/
+
+        /*fill()(value,start,end(skip))*/
+        /*var flower = ["Lotus", "Rose", "Lily"];
+        var res = flower.fill("Sunflower", 0, 2);
+        document.write(res);*/
+
+        /*splice*/
+
+        //sentax
+        //splice(start,(it's start 0'th position)delete,element1,element2....);
+
+        /*var month = ["Jan", "Feb", "april", "december"];
+        var result = month.splice(1, 3, "march", "june");
+        document.write(month);*/
+
+        //slice(start,end)
+
+        /*var month = ["Jan", "Feb", "april", "december"];
+        var result = month.slice(1, 3);
+        document.write(result);*/
+        //indexOf,lastindexOf
+        /*var month = ["Jan", "Feb", "april", "december"];
+        var result = month.indexOf("april");
+        document.write(result);*/
+
+        //map()
+        /*var arr = [6, 7, 8, 9];
+        var res = arr.map(x => x * 3);
+        document.write(res);*/
+
+        //forEach(function(argument))
+
+        /*var arr1 = [6, 7, 8, 9];
+        arr1.forEach(function(value) {
+            var ar = value * 2;
+            document.write(ar + "! ");
+        });*/
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
